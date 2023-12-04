@@ -1,7 +1,10 @@
 ## 변수 선언 후 정의 시 고려점 (넣는 값이 문자 or 숫자)
 # 문자 출력 
+print("Hello, World! Youjin Kim.") # 상수
+
 helloworld = "Hello, World! Youjin Kim."  # 문자형 변수
 print(helloworld)
+
 
 # 숫자 합산 출력
 numbers = 3 + 5  # 숫자형 변수
