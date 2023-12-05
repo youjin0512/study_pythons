@@ -10,14 +10,4 @@ first = int(num_first)
 second = int(num_second)
 third = int(num_third)
 cuboid = first * second * third
-print(가로({})m * 세로({})m * 높이({})m = 직육면체({})m^3 .format(first, second, third, cuboid))
-pass
-# input_width = "가로"
-# input_length = "세로"
-# input_height = "높이"
-
-# # input
-# str_input = input("{} {} {}".format(str_input_width,str_input_length,str_input_height))
-# str_input_desc = " = 직육면체"
-# print(" = 직육면체".format(str_input = input))
-
+print("가로({})m * 세로({})m * 높이({})m = 직육면체({})m^3" .format(first, second, third, cuboid))
