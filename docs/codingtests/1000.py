@@ -6,3 +6,7 @@
 # 출력
 ## 첫째 줄에 A+B를 출력한다.
 
+num_first = 1
+num_second = 2
+num_put = int(input(num_first+num_second))
+print("{} + {} = {}".format(num_first, num_second, num_put))
