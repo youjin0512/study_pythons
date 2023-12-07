@@ -21,3 +21,10 @@ if 5 > 2: # 묶음 기호인 :과 tab은 하나의 쌍
   print("Five is greater than two!") # ----> 여기까지만 하나의 쌍
 print("end") # ----> 여기는 새로운 문장
 
+
+# 한줄에 출력
+first = "First"
+second = "Second"
+print("first : {}! ".format(first), end="")  #, end="," : 줄바꿈 없앰
+print("second : {}! ".format(second))
+print("End Program!")
