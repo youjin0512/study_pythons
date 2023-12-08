@@ -23,36 +23,32 @@
 # # timestables() 실행
 # timestables(int(str_input))
 
-
-
-def timestables() : # 'x'에 user의 input 받음
-    num_put = int(str_put)
+def timestables(str_input) : # 'x'에 user의 input 받음
+    num_put = int(str_input)
     num_lists = [1, 2, 3, 4, 5, 6, 7, 8, 9] # 9단까지만 실행
-    if num_put == 30 :
-        for x in num_lists :
-            print("30*{}={}".format(x, 30*x))
-    elif num_put == 35:
-        for x in num_lists :
-            print("35*{}={}".format(x, 35*x))
-    elif num_put == 20:
-        for x in num_lists :
-            print("20*{}={}".format(x, 20*x))
-    else :
-        print("입력할 수 없는 숫자입니다.")
-
+    for x in num_lists :
+        if num_put == 30 :   
+            print("30*{}={}".format(x, num_put*x))
+        elif num_put == 35:
+            print("35*{}={}".format(x, num_put*x))
+        elif num_put == 20:
+            print("20*{}={}".format(x, num_put*x))
+        else :
+            print("입력할 수 없는 숫자입니다.")
     return stop() # 이후 무조건 stop() 실행시키기 위해 return stop()
 
 def stop() : # 종료할지 말지 결정하는 function
     str_input=input("구구단 몇단(종료하려면 q 입력) : ") # 이전 input과 달리 종료 sign을 누를 수 있게 함
     if str_input !="q" : # user input이 q가 아닐 경우 timetables() 실행 - 안에 필요한 변수 입력함.
-        timestables()
+        timestables(str_input)
+        return str_input
     else : # q가 나올 경우 종료
         print("End Program!")
 
-# 초기 user input
-str_put = input("구구단 몇단(종료하려면 q 입력) : ")
-# timestables() 실행
-timestables()
+
+stop()
+
+
 
 
 # num_put = int(input())
