@@ -1,6 +1,5 @@
 # function에 들어가는 값들
 def add(first, second) :  # 호출 시 변수에 값이 할당됨. 여기에서의 first, second는 변수 & 호출할때만 값이 할당됨/입력값에 따라 return되는 값이 달라짐
-
   sum = first + second
   # return 0
   return sum # 상수(예.0) 대신 변수 사용

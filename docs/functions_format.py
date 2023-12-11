@@ -1,3 +1,4 @@
+# 기존 파일명 functions_form.py 에서 funciton_format.py으로 변경
 # 기본 function 형식 - 기다림. 불리울 때 기능한다.
 def function_name() : 
   pass      # 내용 넣기
