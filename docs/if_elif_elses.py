@@ -54,4 +54,30 @@ elif my_score > 80 : # 80점 초과 : B
 else :               # 나머지 : F
     pass
     print("{}은 80점 이하이므로 F학점.".format(my_score))
+
+
+# 부등호 사용 시 결과는 True or False(boolean)
+# 논리 연산자(True or False에 대한 결과값)
+first = 200
+second = 33
+third = 500
+# condition(조건문) 사용 이전에 각각 결과 확인(DEBUG CONSOLE 통해서)
+first > second
+# True
+third > first
+# True
+(first > second) and (third > first)
+# True
+
+if (first > second) and (third > first) :
+    print("Both conditions are True")
+
+if not (first < second) :
+    print("not (first < second)")
+# False
+
+# (first > second) or (third > first) and (first > second) and (third > first)
+# 조합해서 쓰는것보다는 하나의 연산자만 사용하는 것이 좋음
+
+pass
 print("End Program!")
