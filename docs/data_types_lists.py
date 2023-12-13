@@ -34,5 +34,25 @@ list_fruits[3]
 #   File "<string>", line 1, in <module>
 # IndexError: list index out of range
 
+# list 초기화 방식
+list_fruits_primitive = ["melon", "apple", "banana", "cherry"]   # primitive : 약속어
+tuple_fruits = ("melon", "apple", "banana", "cherry")
+list_fruits_constructor = list(("melon", "apple", "banana", "cherry"))   # constructor : 생성자 / list는 import 필요없음. 외부에서 class를 끌어안고 들어옴   *list() : class
+# list_fruits_primitive.append('strawberry')            # append : 맨 뒤에 붙는다(넣는다)
+
+type(list_fruits_primitive)
+# <class 'list'>
+type(list_fruits_constructor)
+# <class 'list'>
+
+# 삭제 대상이 해당 값이 있는 item
+## append 뒤에 문자열 추가
+list_fruits_primitive.append('strawberry')
+list_fruits_constructor.append('watermelon')
+## remove 해당 문자열 삭제
+list_fruits_primitive.remove('apple')
+list_fruits_constructor.remove('melon')
+# 삭제 대상이 전체 item
+list_fruits_primitive.clear()
 
 pass
