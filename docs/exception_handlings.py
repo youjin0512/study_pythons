@@ -19,7 +19,7 @@ num_second = 5
 
 # 곱셈 연산
 try:
-    result = num_first / num_second    # 정상일 때 뱉어내는 부분 -> 해당 부분 정상이면 바로 아랫줄 pass로 넘어감, but num_first가 문자이므로 except의 result로 넘어감(breakpoint 후 F5시)
+    result = num_first / num_sec ond    # 정상일 때 뱉어내는 부분 -> 해당 부분 정상이면바로 아랫줄 pass로 넘어감, but num_first가 문자이므로 except의 result로 넘어감(breakpoint 후 F5시)
     pass    # 업무 코드 입력 부분                                
 except:
     result = int(num_first) / int(num_second)    # 에러날 때 캐스트로 해서 뱉어내는 부분 / num_first, num_second를 int로 감싸기
