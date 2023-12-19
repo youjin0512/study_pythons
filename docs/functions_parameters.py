@@ -4,15 +4,17 @@ def add(first, second) :  # 호출 시 변수에 값이 할당됨. 여기에서�
   # return 0
   return sum # 상수(예.0) 대신 변수 사용
 
-first = 5
-second = 4
-# num_sum = 0
-num_sum = add(5, 4) # 5,4는 상수 parameters 사용/ 상수는 왠만하면 사용하지 말고 변수를 사용하자. (변수는 2열의 first, second)
-print("add return 결과 : {}".format(num_sum))
-third = 6   # 변수
-fourth = 10 # 변수
-num_sum = add(third, fourth) # function 부르(call)면 (변수가 아닌) 값들만 전달됨
-print("add return 결과 : {}".format(num_sum))
+# first = 5
+# second = 4
+
+if __name__ == "__main__" : 
+  # num_sum = 0
+  num_sum = add(5, 4) # 5,4는 상수 parameters 사용/ 상수는 왠만하면 사용하지 말고 변수를 사용하자. (변수는 2열의 first, second)
+  print("add return 결과 : {}".format(num_sum))
+  third = 6   # 변수
+  fourth = 10 # 변수
+  num_sum = add(third, fourth) # function 부르(call)면 (변수가 아닌) 값들만 전달됨
+  print("add return 결과 : {}".format(num_sum))
 
 
 
@@ -28,8 +30,9 @@ def return_grade(my_score) :   # 자신을 불렀을 때 값들 들어감(순서
   # return_listbyindex() # function 내에서도 fuction 작성 가능
   return my_grade
 
-# str_grade = return_grade(99)  # 호출 시 값들이 넘어감(순서 매칭)
-# print("당신의 학점 : {}.".format(str_grade))
-my_score = 88
-str_grade = return_grade(my_score)
-print("당신의 학점 : {}.".format(str_grade))
+if __name__ == "__main__" :    # "__main__" : 초기화로 세팅되어있는 함수(아무도 선언하지 않아도 실행되는 파일이 중심이 되어 main function으로 여겨짐)
+  # str_grade = return_grade(99)  # 호출 시 값들이 넘어감(순서 매칭)
+  # print("당신의 학점 : {}.".format(str_grade))
+  my_score = 88
+  str_grade = return_grade(my_score)
+  print("당신의 학점 : {}.".format(str_grade))

@@ -11,7 +11,7 @@ person.add_age()   # person class가 변수화됨
 
 
 ## import 시 주로 사용하는 방식
-from classes_formats import Person, Arithmetics, Class_name  # classes_formaats : module
+from classes_formats import Person, Arithmetics, Class_name  # classes_formats : module
 person_second = Person()
 arithmetics_second = Arithmetics()
 pass
