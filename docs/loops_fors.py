@@ -40,7 +40,6 @@ for number in numerics:
 # 당신의답변 : E
 
 
-
 list_polls = ["1. 컴퓨터 운영체제에 대한 선호도는 어떠신가요?"
             ,"A. Windows B. macOS C. Linux D. Chrome OS E. 기타"
             ,"2. 주로 사용하는 프로그래밍 언어는 무엇인가요?"
@@ -66,5 +65,6 @@ for num_count in [0,2,4]:
 
     print("----------------------------")
     pass
+
 print("선호 답항 : {}".format(list_statistics))
 print("End Program!")
