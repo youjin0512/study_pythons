@@ -2,7 +2,7 @@
 # 1.for, if문(삼항연산자)
 # 2.lambda(람다)
 lambda param : param + 2      # function없이 선언만 있음
-lambda param : param + 2(param)
+# lambda param : param + 2(param)
 def function_name(param):
     pass
     return 0
